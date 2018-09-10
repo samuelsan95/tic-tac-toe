@@ -21,14 +21,14 @@ body {
     background: #fff;
     border: 1px solid #999;
     float: left;
-    font-size: 24px;
+    font-size: 50px;
     line-height: 34px;
-    height: 34px;
+    height: 100px;
     margin-right: -1px;
     margin-top: -1px;
     padding: 0;
     text-align: center;
-    width: 34px;
+    width: 100px;
   }
 
   .square:focus{
@@ -47,11 +47,19 @@ body {
   }
   
   .game {
-    display: flex;
-    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+  }
+  
+  .game-board {
+    margin-left: 25%;
+    margin-right: auto;
   }
   
   .game-info {
-    margin-left: 20px;
+    margin-left: 25%;
+    margin-right: auto;
+    margin-top: 20px;
   }
   

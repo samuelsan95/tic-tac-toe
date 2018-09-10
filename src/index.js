@@ -4,6 +4,7 @@ import './index.css';
   
 class Board extends React.Component {
     renderSquare(i) {
+        console.log('i ', i);
         let fieldSelected = (this.props.field === i) ? true : false;
         if (this.props.winner && this.props.winner.length) {
             for (let j = 0, length = this.props.winner.length; j < length; j ++) {
@@ -12,6 +13,7 @@ class Board extends React.Component {
                 }
             }
         }
+
         return (
             <Square 
                 value={this.props.squares[i]}
@@ -20,23 +22,6 @@ class Board extends React.Component {
                 onClick={() => this.props.onClick(i)}
             />
         );
-    }
-
-    renderCols(cols, numOfSquare) {
-        for (let i = 0; i < cols; i++) {    
-            return this.renderSquare(cols * numOfSquare)
-        }
-    }
-
-    renderRows(rows, cols) {
-
-        for (let i = 0; i < rows; i++) {    
-            return(
-                <div className="board-row">
-                    {this.renderCols(cols, i)}
-                </div>
-            );
-        }
     }
   
     render() {
@@ -56,7 +41,7 @@ class Board extends React.Component {
                     {this.renderSquare(6)}
                     {this.renderSquare(7)}
                     {this.renderSquare(8)}
-                </div>
+                </div> 
             </div>
         );
     }
