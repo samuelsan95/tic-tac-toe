@@ -63,5 +63,18 @@ body {
     margin-left: 25%;
     margin-right: auto;
     margin-top: 20px;
+    color: #403075;
+  }
+
+  .title-game {
+    margin-left: 25%;
+    margin-right: auto;
+  }
+
+  .title-game h1 {
+    margin-left: 18%;
+    margin-right: auto;
+    margin-bottom: 5px;
+    color: #403075;
   }
   
