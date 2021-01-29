@@ -15,7 +15,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://samuelsan95.github.io/tic-tac-toe}",
+  "homepage": "http://samuelsan95.github.io/tic-tac-toe",
   "devDependencies": {
     "gh-pages": "^3.1.0"
   }
